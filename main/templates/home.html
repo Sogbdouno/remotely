@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content%}
+<h1>Acceuil</h1>
+
+{% for job in tous_les_jobs %}
+    <p>{{ job.title }}</p>
+{% endfor %}
+<hr >
+
+<p>{{ un_seul_job.title }} </p>
+
+{% endblock%}
